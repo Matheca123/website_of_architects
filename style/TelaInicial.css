@@ -1,31 +1,29 @@
 .titulo {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    color:grey;
-  }
-  .titulo {
-    font-size: 3.5rem;
-    font-weight: 200;
-  }
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:grey;
+}
+.titulo {
+  font-size: 3.5rem;
+  font-weight: 200;
+}
 
-  .subtitulo {
-    font-size: 2.5rem;
-    font-weight: 750;
-    color: #000;
-  }
+.subtitulo {
+  font-size: 2.5rem;
+  font-weight: 750;
+  color: #000;
+}
 
-  .arrow i {
-    background-color: rgb(250, 246, 246);
-    padding: 1rem;
-    transition: background-color 0.3s ease; 
-    margin-top: 1.5rem;
-  }
-  
-  .arrow i:hover {
-    background-color:rgb(241, 238, 238);
-    color: white;
-  }
-  
-  
+.arrow i {
+  background-color: rgb(250, 246, 246);
+  padding: 1rem;
+  transition: background-color 0.3s ease; 
+  margin-top: 1.5rem;
+}
+
+.arrow i:hover {
+  background-color:rgb(241, 238, 238);
+  color: white;
+}
