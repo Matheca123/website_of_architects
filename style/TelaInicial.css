@@ -1,11 +1,8 @@
 .titulo {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
-  color:grey;
-}
-.titulo {
+  color: grey;
   font-size: 3.5rem;
   font-weight: 200;
 }
@@ -41,13 +38,3 @@
   color: #000;
 }
 
-#carouselExampleControlsNoTouching {
-  height: 400px; /* altura fixa que você desejar */
-  overflow: hidden;
-}
-
-#carouselExampleControlsNoTouching .carousel-inner img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover; /* mantém proporção e preenche o espaço */
-}
