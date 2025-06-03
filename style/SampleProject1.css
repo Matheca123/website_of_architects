@@ -1,0 +1,58 @@
+.imagem-banner {
+  width: 100%;          /* ocupa 100% da largura do container */
+  max-height: 450px;    /* limite de altura */
+  object-fit: cover;    /* cobre todo o espaço sem distorcer */
+  border-radius: 8px;   /* bordas arredondadas (opcional) */
+}
+
+    /* === 1) Classe para forçar aspecto 1:1 (quadrado) === */
+    .square {
+      width: 100%;
+      padding-top: 100%;   /* força altura = largura */
+      position: relative;  /* para posicionar o conteúdo interno */
+      overflow: hidden;
+      /* Removi o background-color cinza para não aparecer área cinza */
+      background-color: transparent;
+    }
+
+    /* === 2) Conteúdo interno do quadrado (texto ou <img>) === */
+    .square > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: flex-start;  /* alinha o texto ao topo do quadrado */
+      justify-content: center;  /* centraliza horizontalmente */
+      overflow: auto;           /* se o texto for maior, aparece rolagem interna */
+      padding: 1rem;            /* espaçamento interno para o texto */
+      box-sizing: border-box;
+    }
+
+    /* === 3) Se houver <img> dentro de .square, faz object-fit e cobre 100% === */
+    .square img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* === 4) Remove o padding horizontal das colunas usadas para imagens “full-width” === */
+    .no-gutters {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .no-gutters > [class^="col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* Estilo customizado para a linha (hr) abaixo do título */
+    hr{
+      border: 0;               /* remove borda padrão */
+      border-top: 1px solid #FFFFFF; /* define apenas uma borda superior bem fina e em cinza-claro */
+      margin-top: 0.5rem;      /* ajusta espaço acima, se necessário */
+      margin-bottom: 1rem;     /* ajusta espaço abaixo, se necessário */
+    }
+
