@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style/Gallery.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    .photo:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+      text-align: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+      margin-top: 5%;
+      border-radius: 10px;
+    }
+
+    .modal:target {
+      display: block;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">DIGITAL PROJECT</div>
+    <nav>
+      <ul>
+        <li><a class="active" href="#">Gallery</a></li>
+        <li><a href="#">Main</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Photo <span>Gallery</span></h1>
+    <section class="gallery">
+      <a href="#img1"><div class="photo" style="background-image: url('img_gallery/Rectangle 22.png');"></div></a>
+      <a href="#img2"><div class="photo" style="background-image: url('img_gallery/Rectangle 23.png');"></div></a>
+      <a href="#img3"><div class="photo" style="background-image: url('img_gallery/Rectangle 24.png');"></div></a>
+      <a href="#img4"><div class="photo" style="background-image: url('img_gallery/Rectangle 25.png');"></div></a>
+      <a href="#img5"><div class="photo" style="background-image: url('img_gallery/Rectangle 26.png');"></div></a>
+      <a href="#img6"><div class="photo" style="background-image: url('img_gallery/Rectangle 27.png');"></div></a>
+      <a href="#img7"><div class="photo" style="background-image: url('img_gallery/Rectangle 28.png');"></div></a>
+      <a href="#img8"><div class="photo" style="background-image: url('img_gallery/Rectangle 29.png');"></div></a>
+      <a href="#img9"><div class="photo" style="background-image: url('img_gallery/Rectangle 30.png');"></div></a>
+      <a href="#img10"><div class="photo" style="background-image: url('img_gallery/Rectangle 31.png');"></div></a>
+    </section>
+
+    <div class="pagination">
+      <span>01</span>
+      <span>/</span>
+      <span>05</span>
+      <button>&larr;</button>
+      <button>&rarr;</button>
+    </div>
+  </main>
+
+  <!-- Modais para cada imagem -->
+  <div id="img1" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 22.png" alt=""></div>
+  <div id="img2" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 23.png" alt=""></div>
+  <div id="img3" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 24.png" alt=""></div>
+  <div id="img4" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 25.png" alt=""></div>
+  <div id="img5" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 26.png" alt=""></div>
+  <div id="img6" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 27.png" alt=""></div>
+  <div id="img7" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 28.png" alt=""></div>
+  <div id="img8" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 29.png" alt=""></div>
+  <div id="img9" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 30.png" alt=""></div>
+  <div id="img10" class="modal"><span class="close"><a href="#">×</a></span><img src="img_gallery/Rectangle 31.png" alt=""></div>
+
+  <footer>
+    <div class="footer-section logo">DIGITAL PROJECT</div>
+
+    <div class="footer-section">
+      <h4>Information</h4>
+      <ul>
+        <li>Main</li>
+        <li>Gallery</li>
+        <li>Projects</li>
+        <li>Certifications</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contacts</h4>
+      <p>1234 Sample Street<br>Austin Texas 78704</p>
+      <p><a href="https://wa.me/5575983739767" target="_blank">WhatsApp (75) 98373-9767</a></p>
+      <p><a href="mailto:gabrieldesouza0321@gmail.com">gabrieldesouza0321@gmail.com</a></p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Social Media</h4>
+      <p>
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">Pinterest</a>
+      </p>
+    </div>
+    <div class="footer-bottom">
+        © 2019 Digital Project. Все права защищены.
+      </div>
+  </footer>
+  
+</body>
+</html>

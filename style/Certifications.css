@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  
+  nav a.active {
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+  }
+  
+  main.certifications-main {
+    padding: 100px 40px;
+    margin-bottom: 300px;
+  }
+  
+  .certifications-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .certifications-title .light {
+    color: gray;
+    font-weight: 400;
+  }
+  
+  .certifications-title .bold {
+    color: #333;
+    font-weight: 700;
+  }
+  
+  footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 40px;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
