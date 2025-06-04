@@ -1,0 +1,41 @@
+.custom-link {
+    position: relative;
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+  }
+  
+  .custom-link::before,
+  .custom-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #000;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-link::before {
+    top: 0;
+  }
+  
+  .custom-link::after {
+    bottom: 0;
+  }
+  
+  .custom-link:hover::before,
+  .custom-link:hover::after,
+  .custom-link.active::before,
+  .custom-link.active::after {
+    background-color: #007bff;
+  }
+  
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
