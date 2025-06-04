@@ -103,3 +103,9 @@ body {
     color: #aaa;
   }
   
+  .logo {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+  }
+  

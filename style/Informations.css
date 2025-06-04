@@ -19,9 +19,9 @@
   }
   
   .logo {
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
   }
   
   nav ul {
@@ -244,4 +244,6 @@
   .contact-form .button:hover {
     background-color: #555;
   }
+  
+
   
