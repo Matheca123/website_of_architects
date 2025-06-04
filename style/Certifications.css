@@ -14,8 +14,9 @@ body {
   }
   
   .logo {
-    font-weight: bold;
-    font-size: 18px;
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
   }
   
   nav ul {

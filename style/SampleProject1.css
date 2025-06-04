@@ -56,3 +56,9 @@
       margin-bottom: 1rem;     /* ajusta espaço abaixo, se necessário */
     }
 
+    .logo {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+  }
+

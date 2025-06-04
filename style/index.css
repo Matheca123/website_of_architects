@@ -39,3 +39,8 @@
     align-items: center;
   }
   
+  .logo {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+  }
